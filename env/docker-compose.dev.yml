@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  zookeeper:
+    image: bitnami/zookeeper:${ZOOKEEPER_VERSION}
+  
+  kafka:
+    image: bitnami/kafka:${KAFKA_VERSION}
+
+  kafka-ui:
+    image: provectuslabs/kafka-ui:latest
+    container_name: ${COMPOSE_PROJECT_NAME}_kafka-ui
+    restart: always
+    depends_on:
+      - zookeeper
+      - kafka
+    ports:
+      - "${KAFKA_UI_PORT}:${KAFKA_UI_PORT}"
+    environment:
+      - KAFKA_CLUSTERS_0_NAME=local
+      - KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS=kafka:2${KAFKA_PORT}
+      - KAFKA_CLUSTERS_0_ZOOKEEPER=zookeeper:${ZOOKEEPER_PORT}
+      - SERVER_PORT=${KAFKA_UI_PORT}
+ 

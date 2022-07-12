@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <PackageId>Erm.KafkaClient</PackageId>
+        <Description>Nebim.Era.KafkaClient main package</Description>
+        <PackageVersion>0.1.4</PackageVersion>
+        <Title>Nebim.Era.KafkaClient</Title>
+        <Copyright>Nebim</Copyright>
+        <PackageProjectUrl>https://github.com/nebim-era/era.kafka-client</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/nebim-era/era.kafka-client.git</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>Kafka</PackageTags>
+        <AssemblyVersion>0.1.1</AssemblyVersion>
+        <LangVersion>default</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Confluent.Kafka" Version="1.8.2" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="6.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Logging" Version="6.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="6.0.0" />
+        <PackageReference Include="System.Threading.Channels" Version="6.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <InternalsVisibleTo Include="$(AssemblyName).Tests" />
+        <InternalsVisibleTo Include="$(AssemblyName).IntegrationTests" />
+    </ItemGroup>
+</Project>

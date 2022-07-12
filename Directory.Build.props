@@ -1,0 +1,9 @@
+<Project>
+    <PropertyGroup>
+        <Authors>Nebim Developers</Authors>
+        <Copyright>Nebim Neyir Bilgisayar Sanayii ve Hizmetleri A.Ş.</Copyright>
+        <RepositoryUrl>https://github.com/nebim-era/era.kafka-client</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <Company>Nebim Neyir Bilgisayar Sanayii ve Hizmetleri A.Ş.</Company>
+    </PropertyGroup>
+</Project>

@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Erm.KafkaClient", "src\Erm.KafkaClient\Erm.KafkaClient.csproj", "{E1055352-9F5B-4980-80A3-50C335B79A16}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{303AE78F-6C96-4DF4-AC89-5C4FD53AFF0B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Erm.KafkaClient.Sample", "samples\Erm.KafkaClient.Sample\Erm.KafkaClient.Sample.csproj", "{E59C13AF-41E7-4DFA-B118-A65EA87F0605}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{0A73629E-8E08-44B9-812E-553C012B998A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Erm.KafkaClient.Tests", "test\Erm.KafkaClient.Tests\Erm.KafkaClient.Tests.csproj", "{F1E42E5D-9550-4943-B6A8-99C1F0920473}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "env", "env", "{E6C057C6-3D30-4341-B0B5-CD00E7AD4FAA}"
+	ProjectSection(SolutionItems) = preProject
+		env\docker-compose.base.yml = env\docker-compose.base.yml
+		env\docker-compose.dev.yml = env\docker-compose.dev.yml
+		env\Makefile = env\Makefile
+		env\.env = env\.env
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Erm.KafkaClient.IntegrationTests", "test\Erm.KafkaClient.IntegrationTests\Erm.KafkaClient.IntegrationTests.csproj", "{83BE0960-951E-472B-8F3C-C232031C04F2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{F0EB4EDF-C3F6-4126-8917-2215EB3BE59A}"
+	ProjectSection(SolutionItems) = preProject
+		docs\kafka-client-consumer.drawio = docs\kafka-client-consumer.drawio
+		docs\kafka-client-consumer.png = docs\kafka-client-consumer.png
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E1055352-9F5B-4980-80A3-50C335B79A16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1055352-9F5B-4980-80A3-50C335B79A16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1055352-9F5B-4980-80A3-50C335B79A16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1055352-9F5B-4980-80A3-50C335B79A16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E59C13AF-41E7-4DFA-B118-A65EA87F0605}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E59C13AF-41E7-4DFA-B118-A65EA87F0605}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E59C13AF-41E7-4DFA-B118-A65EA87F0605}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E59C13AF-41E7-4DFA-B118-A65EA87F0605}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1E42E5D-9550-4943-B6A8-99C1F0920473}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1E42E5D-9550-4943-B6A8-99C1F0920473}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1E42E5D-9550-4943-B6A8-99C1F0920473}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1E42E5D-9550-4943-B6A8-99C1F0920473}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83BE0960-951E-472B-8F3C-C232031C04F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83BE0960-951E-472B-8F3C-C232031C04F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83BE0960-951E-472B-8F3C-C232031C04F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83BE0960-951E-472B-8F3C-C232031C04F2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E59C13AF-41E7-4DFA-B118-A65EA87F0605} = {303AE78F-6C96-4DF4-AC89-5C4FD53AFF0B}
+		{F1E42E5D-9550-4943-B6A8-99C1F0920473} = {0A73629E-8E08-44B9-812E-553C012B998A}
+		{83BE0960-951E-472B-8F3C-C232031C04F2} = {0A73629E-8E08-44B9-812E-553C012B998A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6AE955B5-16B0-41CF-9F12-66D15B3DD1AB}
+	EndGlobalSection
+EndGlobal
